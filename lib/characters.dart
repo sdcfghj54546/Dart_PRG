@@ -40,7 +40,7 @@ String toString() {
 }
 class Archer extends Character {
   final double critChance;
-  Archer({required Strting name})
+  Archer({required String name})
     : critChance = 0.3,
       super(name: name, hp: 90);
   @override
@@ -55,7 +55,7 @@ class Archer extends Character {
   }
   @override
   String toString() {
-    return '  Лучник'
+    return '� Лучник $name (шанс крита: ${(critChance * 100).round()}%)';
   }
 }
   
